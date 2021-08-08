@@ -24,10 +24,10 @@ Users should be able to:
 ### Screenshot
 
 ### Desktop View
-![Alt text](screenshots/desktopview-screenshot.png)
+![Alt text](screenshots/desktopview-screenshot.PNG)
 
 ### Mobile View
-![Alt text](screenshots/mobileview-screenshot.png)
+![Alt text](screenshots/mobileview-screenshot.PNG)
 
 ### Links
 
