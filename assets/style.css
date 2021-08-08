@@ -1,0 +1,166 @@
+:root {
+    /* Primary Color */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral Colors */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+h1 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--transparent-white);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+button {
+    color: var(--very-light-gray);
+}
+
+/* ----- Mobile View ----- */
+
+.container {
+    width: fit-content;
+    height: auto;
+    margin: 30px auto;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 30px;
+    text-align: left;
+}
+
+button {
+    border-radius: 30px;
+    border-width: 0;
+}
+
+.container section button a {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.container section p {
+    margin: 20px 0;
+}
+
+.container .first {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.container .first button a {
+    color: var(--bright-orange);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+}
+
+.container .first button:hover {
+    background-color: var(--bright-orange);
+    border-width: 1px;
+    border-color: var(--very-light-gray);
+}
+
+.container .first button a:hover {
+    color: var(--very-light-gray);
+}
+
+.container .second {
+    background-color: var(--dark-cyan);
+}
+
+.container .second button a {
+    color: var(--dark-cyan);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+}
+
+.container .second button:hover {
+    background-color: var(--dark-cyan);
+    border-width: 1px;
+    border-color: var(--very-light-gray);
+}
+
+.container .second button a:hover {
+    color: var(--very-light-gray);
+}
+
+.container .third {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.container .third button a {
+    color: var(--very-dark-cyan);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+}
+
+.container .third button:hover {
+    background-color: var(--very-dark-cyan);
+    border-width: 1px;
+    border-color: var(--very-light-gray);
+}
+
+.container .third button a:hover {
+    color: var(--very-light-gray);
+}
+
+@media (min-width: 723px) {
+    body { 
+        max-width: 720px;
+        margin: 0 auto !important; 
+        float: none !important; 
+    }
+
+    .container {
+        display: inline-flex;
+        height: 100vh;
+        max-width: 720px; 
+        margin: 0 auto !important; 
+    }
+
+    .container section p {
+        margin-bottom: 70px;
+    }
+
+    .container .first {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .container .third {
+        border-radius: 0 10px 10px 0;
+    }
+}
